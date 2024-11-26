@@ -119,11 +119,53 @@
 // // if yes, end loop
 
 //? for (not quite working how i want...)
-function between50And100(){
-  let inputNumber = Number(prompt('Please input a number between 50 and 100'))
-  for(num = inputNumber; num > 100 || num < 50; between50And100()){
-    alert(`${num} is not between 50 and 100`)
-    num = Number(prompt('Please input a number between 50 and 100'))
-  }
-}
-between50And100()
+// function between50And100(){
+//   let inputNumber = Number(prompt('Please input a number between 50 and 100'))
+//   for(num = inputNumber; num > 100 || num < 50; between50And100()){
+//     alert(`${num} is not between 50 and 100`)
+//     num = Number(prompt('Please input a number between 50 and 100'))
+//   }
+// }
+// between50And100()
+
+//* TASK 4
+//* Multiplication table
+// Write a program that asks the user for a number, then shows the multiplication table for this number.
+//? while
+// const multiplicationNumber = Number(prompt('Please input a number you would like to mulitply'))
+// let i = 0
+// while (i <= 12){
+//   console.log(`${multiplicationNumber} * ${i} = ${multiplicationNumber * i}`)
+//   i++
+// }
+
+//? for
+// const multiplicationNumber = Number(prompt('Please input multiplication number'))
+// for(i = 0; i <= 12; i++){
+//   console.log(`${multiplicationNumber} * ${i} = ${multiplicationNumber * i}`)
+// }
+
+// When you are done, improve the program so it only accepts numbers between 2 and 9
+//? while
+// let multiplicationNumber = Number(prompt('Please enter a multiplication number'))
+// let i = 0
+// while(i <= 12){
+//   if (multiplicationNumber > 9 || multiplicationNumber < 2){
+//     alert(`${multiplicationNumber} is not between 2 and 9`)
+//     multiplicationNumber = Number(prompt('Please enter a multiplication number'))
+//   }else{
+//     console.log(`${multiplicationNumber} * ${i} = ${multiplicationNumber * i}`)
+//     i++
+//   }
+// }
+
+//? for
+// let multiplicationNumber = Number(prompt('Please input a number to be multiplied'))
+// for (i = 0; i <= 12; i++){
+//   if( multiplicationNumber > 9 || multiplicationNumber < 2){
+//     alert(`${multiplicationNumber} is not between 2 and 9`)
+//     multiplicationNumber = Number(prompt('Please input a number to be multiplied'))
+//   }else {
+//     console.log(`${multiplicationNumber} * ${i} = ${multiplicationNumber * i}`)
+//   }
+// }

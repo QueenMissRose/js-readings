@@ -1,4 +1,5 @@
 //! CODING TIME
+// Try to code each exercise twice, once with a while loop an the other a for loop, to see for yourself which one is the most appropriate.
 //* TASK 1 
 //* Carousel
 // Write a program that launches a carousel for 10 turns, showing the number each time.
@@ -167,5 +168,90 @@
 //     multiplicationNumber = Number(prompt('Please input a number to be multiplied'))
 //   }else {
 //     console.log(`${multiplicationNumber} * ${i} = ${multiplicationNumber * i}`)
+//   }
+// }
+
+//* TASK 5
+//* Neither yes nor no
+// Write a program that plays "neither yes, nor no" with the user. Specifically, the program asks the user to enter text until either "yes" or "no" is typed, which ends the game.
+
+//? while
+// let word 
+// while(word !== 'yes' && word !== 'no'){
+//   word = prompt('Please enter a word').toLowerCase()
+//   if(word !== "yes" && word !== "no"){
+//   alert(`${word} is Neither yes, nor no`)
+//   }else {
+//     alert('Success!')
+//   }
+// }
+
+//? for
+// let word
+// for(/* no initialisation */;word !== "yes" && word !== "no"; /* no expression */){
+//   word = prompt('please enter a word').toLowerCase()
+//   if(word !== "yes" && word !== "no"){
+//     alert(`${word} is Neither yes, nor no`)
+//   }else {
+//     alert('Success!')
+//   }
+// }
+
+//* TASK 6
+//* FizzBuzz
+/* Write a program that shows all numbers between 1 and 100 with the following exceptions:
+1/ it shows "Fizz" instead if the number is divisible by 3.
+2/ it shows "Buzz" instead if the number is divisible by 5 and NOT 3 */
+//? while
+// log numbers 1 - 100
+// let num = 1
+// while(num <= 100){
+//   if(num % 3 == 0){
+//     console.log('Fizz')
+//   }else if(num % 5 == 0){
+//     console.log('Buzz')
+//   }else{
+//     console.log(num)
+//   }
+//   num++
+// }
+
+//? for
+// for(num = 1; num <= 100; num++){
+//   if(num % 3 == 0){
+//     console.log('Fizz')
+//   }else if(num % 5 == 0){
+//     console.log('Buzz')
+//   }else {
+//     console.log(num)
+//   }
+// }
+
+// When it's done, improve it so that the program shows "FizzBuzz" instead for numbers divisible both by 3 and by 5. 
+//? while
+// let num = 1
+// while(num <= 100){
+//   if(num % 15 == 0){
+//     console.log('FizzBuzz')
+//   }else if(num % 3 == 0){
+//     console.log('Fizz')
+//   }else if(num % 5 == 0){
+//     console.log('Buzz')
+//   }else {
+//     console.log(num)
+//   }
+//   num++
+// }
+
+//? for
+// for(num = 1; num <= 100; num++){
+//   if(num % 15 == 0){
+//     console.log('FizzBuzz')
+//   }else if(num % 3 == 0){
+//     console.log('Fizz')
+//   }else if(num % 5 == 0){
+//     console.log('Buzz')
+//   }else {
+//     console.log(num)
 //   }
 // }
